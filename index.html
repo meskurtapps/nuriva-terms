@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuriva Terms of Use</title>
+
+  <script>
+    (function () {
+      var supported = [
+        "ar","de","en","es","fr","hi","id","it","ja","ko",
+        "ms","nl","pl","pt","ru","th","tr","uk","vi","zh"
+      ];
+
+      var language = (navigator.language || "en")
+        .toLowerCase()
+        .split("-")[0];
+
+      if (!supported.includes(language)) {
+        language = "en";
+      }
+
+      window.location.replace("./" + language + "/");
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=./en/">
+  </noscript>
+</head>
+<body>
+  <p>
+    <a href="./en/">Nuriva Terms of Use</a>
+  </p>
+</body>
+</html>
